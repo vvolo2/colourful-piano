@@ -66,4 +66,4 @@ note-visualiser/
 
 ## About
 
-This was created as a final project for COMP112 at university, exploring the intersection of music and visual art through code. Built with Python's built-in `turtle` graphics library and PyAudio for audio playback.
+This was created as a small project demonstrating basic knowledge of python. The project brings visuals to simple code commands and structures. The goal is to assign specific visuals and colours to a given note, creating a ridimentary version of Mac's beloved music visualiser circa 2010. It is built with Python's built-in 'turtle' fra[hics library and PyAudio for audio playback. 
