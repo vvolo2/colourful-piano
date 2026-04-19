@@ -10,20 +10,16 @@ Type musical notes and watch unique colour graphics and patterns appear on scree
 
 - Interactive note input — type a note and see it come to life
 - Unique colour patterns and graphics for each of the 12 notes (A, A#, B, C, C#, D, D#, E, F, F#, G, G#)
-- Audio playback using PyAudio — hear the note as it's drawn
+- Audio playback using playsound — hear the note as it's drawn
 - Visuals rendered with Python's `turtle` graphics module
 
 ## Requirements
 
 - Python 3.x
-- PyAudio (`pip install pyaudio`)
+- `playsound==1.2.2` for audio playback
+- `pyobjc-framework-Cocoa` (macOS only — required by playsound)
+- `tkinter` for graphics (built into Python, no install needed)
 - The `.wav` note files included in this repository (one per note)
-
-> **Note:** On macOS, installing PyAudio may require PortAudio. You can install it via Homebrew:
-> ```bash
-> brew install portaudio
-> pip install pyaudio
-> ```
 
 ## How to run
 
@@ -37,6 +33,7 @@ Type musical notes and watch unique colour graphics and patterns appear on scree
    ```bash
    pip install -r requirements.txt
    ```
+   > **macOS note:** `pyobjc-framework-Cocoa` is required for `playsound` to work on Mac.
 
 3. Run the program:
    ```bash
@@ -66,4 +63,4 @@ note-visualiser/
 
 ## About
 
-This was created as a small project demonstrating basic knowledge of python. The project brings visuals to simple code commands and structures. The goal is to assign specific visuals and colours to a given note, creating a ridimentary version of Mac's beloved music visualiser circa 2010. It is built with Python's built-in 'turtle' fra[hics library and PyAudio for audio playback. 
+This was created as a final project for COMP112 at university, exploring the intersection of music and visual art through code. Built with Python's built-in `turtle` graphics library and PyAudio for audio playback.
